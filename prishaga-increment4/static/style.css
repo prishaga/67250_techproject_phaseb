@@ -1,0 +1,168 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a1f44; /* Prevents white flashes on load */
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav_bar"
+    "main"
+    "footer";
+  grid-template-columns: 1fr; 
+  min-height: 100vh;
+  gap: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color: #0a1f44;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-start; /* Keeps logo on the left */
+}
+
+#logo {
+  width: 250px; 
+  height: auto;
+}
+
+
+.nav_bar {
+  grid-area: nav_bar;
+  background-color: #0a1f44;
+  display: flex;
+  justify-content: flex-end; /* Right-aligns links */
+  align-items: center;
+  gap: 30px; 
+  padding: 15px 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: #f0f0f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav_bar a:hover {
+  color: #d9534f;
+}
+
+/* The "Buy Tickets" Button */
+.nav_bar a.cta {
+  background-color: #d9534f; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px; 
+  font-weight: bold;
+  border: none;
+}
+
+.nav_bar a.cta:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+
+.active {
+  color: #d9534f !important;
+  font-weight: bold !important;
+  /* Optional: adds a small underline to show it's selected */
+  border-bottom: 2px solid #d9534f; 
+}
+
+/* --- 5. MAIN CONTENT AREA --- */
+.main {
+  grid-area: main;
+  background-color: #0f1a33;
+  padding: 40px;
+  min-height: 60vh; 
+  color: white;
+}
+
+.main h1, .main h2, .main h3 {
+  color: #e63946;
+}
+
+.main p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #0a1f44;
+  color: #f0f0f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  padding: 12px 16px;
+  background-color: #1a2b55;
+  color: #e63946;
+  text-align: left;
+}
+
+td {
+  padding: 12px 16px;
+}
+
+tr:nth-child(even) { background-color: #13213b; }
+tr:hover { background-color: #1a2b55; }
+
+form {
+  width: 80%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #0f1a33;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #1a2b55;
+  background-color: #253858;
+  color: white;
+}
+
+form button {
+  background-color: #e63946;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0a1f44;
+  text-align: center;
+  padding: 25px;
+  color: rgba(245,245,247,.72);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
