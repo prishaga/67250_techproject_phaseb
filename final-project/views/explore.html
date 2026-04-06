@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Prisha Garg">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a class="cta" href="tickets.html">Buy Tickets</a>
+        </nav>
+
+        <main class="main">
+            <figure class="main_figure">
+                <img src="../static/museum.jpg" alt="MonoMuse museum building" width="600">
+            </figure>
+
+            <h2>Mission Statement</h2>
+            <p>
+                MonoMuse explores the connection between art and modern technology through immersive
+                exhibitions and interactive experiences. Our mission is to inspire curiosity and
+                creativity by bringing together artists, technologists, students, and members of
+                the community in a shared space for learning and discovery.
+            </p>
+
+            <p>
+                Through interactive installations, digital storytelling, and collaborative projects,
+                the museum encourages visitors to explore how emerging technologies influence the
+                way we create, experience, and understand art in the modern world.
+            </p>
+
+            <h2>Who We Serve</h2>
+            <p>
+                MonoMuse welcomes a diverse audience including students, artists, researchers,
+                families, and technology enthusiasts. Our exhibitions are designed to be accessible
+                to visitors with different levels of artistic and technical experience, allowing
+                everyone to engage with creativity in meaningful ways.
+            </p>
+
+            <p>
+                The museum also partners with schools, universities, and community organizations
+                to provide workshops, educational programs, and hands-on experiences that inspire
+                the next generation of creative thinkers.
+            </p>
+
+            <h2>Founding Year</h2>
+            <p>
+                MonoMuse was founded in 2018 as a collaborative initiative between artists,
+                technologists, and educators who wanted to create a space dedicated to exploring
+                the relationship between digital innovation and artistic expression.
+            </p>
+
+            <h2>Milestones</h2>
+            <ul>
+                <li>2018: MonoMuse was founded with the goal of exploring art and technology.</li>
+                <li>2019: The museum opened its first digital art exhibition focused on interactive storytelling.</li>
+                <li>2021: MonoMuse hosted international artists and collaborative exhibitions.</li>
+                <li>2023: The museum expanded its educational programs and community workshops.</li>
+            </ul>
+
+            
+
+            <figure class="main_figure">
+                <img src="../static/gallery.jpg" alt="Interior gallery of MonoMuse exhibitions" width="600">
+            </figure>
+        </main>
+
+        <footer class="footer">
+            <p>© MonoMuse. All rights reserved.</p>
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
